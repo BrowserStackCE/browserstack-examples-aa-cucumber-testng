@@ -31,3 +31,6 @@ hs_err_pid*
 *.DS_Store
 *.project
 *.settings
+
+# Target files
+target/*
