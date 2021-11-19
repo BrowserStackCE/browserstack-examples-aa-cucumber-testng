@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 
 import com.browserstack.webdriver.testng.LazyInitWebDriverIterator;
 import com.browserstack.webdriver.testng.ManagedWebDriver;
+
+
+import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
@@ -18,10 +21,10 @@ import io.cucumber.testng.TestNGCucumberRunner;
  *
  * @author Anirudha Khanna
  */
-public class RunAppiumCucumberTests {
+@CucumberOptions(features = "classpath:features", glue = "com.browserstack.examples.stepdefs")
+public class RunAppiumCucumberTests{
     private TestNGCucumberRunner testNGCucumberRunner;
     private static final ThreadLocal<ManagedWebDriver> threadLocalWebDriver = new ThreadLocal<>();
-
     @BeforeClass(alwaysRun = true)
     public void setUpClass() {
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
@@ -56,5 +59,7 @@ public class RunAppiumCucumberTests {
         }
         testNGCucumberRunner.finish();
     }
+
+
 
 }

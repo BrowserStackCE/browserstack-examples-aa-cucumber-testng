@@ -23,3 +23,11 @@
 hs_err_pid*
 
 *.iml
+
+*.vscode
+*.idea
+*.metadata
+*.classpath
+*.DS_Store
+*.project
+*.settings
