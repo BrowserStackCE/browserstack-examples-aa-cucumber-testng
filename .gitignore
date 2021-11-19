@@ -32,5 +32,5 @@ hs_err_pid*
 *.project
 *.settings
 
-# Target files
-target/*
+# Target folder
+target
