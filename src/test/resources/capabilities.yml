@@ -43,8 +43,8 @@ onPremGridDriver:
 cloudDriver:
   hubUrl: https://hub-cloud.browserstack.com/wd/hub
   app:
-    android_custom_id: TheAppAndroid
-    ios_hash_id: bs://d2f69d525062af7e3d8346a2d9defc082a6e986c
+    android_custom_id: <app_custom_id>
+    ios_hash_id: <app_hash_id>
   localTunnel:
     enabled: false
   common_capabilities:
