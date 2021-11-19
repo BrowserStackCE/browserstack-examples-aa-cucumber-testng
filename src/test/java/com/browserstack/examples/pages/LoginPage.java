@@ -8,7 +8,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 public class LoginPage extends BasePage {
 
     @AndroidFindBy (accessibility = "Login Screen") 
-	@iOSXCUITFindBy (accessibility = "Login Screen")
+	@iOSXCUITFindBy (accessibility = "//XCUIElementTypeOther[@name='Login Screen']")
 	private MobileElement navigateLogin;
 
 	@AndroidFindBy (accessibility = "username") 
@@ -24,7 +24,7 @@ public class LoginPage extends BasePage {
 	private MobileElement loginButton;
 
     @AndroidFindBy (xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.TextView[2]") 
-	@iOSXCUITFindBy (accessibility = "You are logged in as alice")
+	@iOSXCUITFindBy (accessibility = "//XCUIElementTypeStaticText[@name='You are logged in as alice']")
 	private MobileElement successMssg;
 
 

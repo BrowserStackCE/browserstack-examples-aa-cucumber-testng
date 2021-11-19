@@ -1,11 +1,9 @@
 package com.browserstack.examples.stepdefs;
 import com.browserstack.examples.pages.EchoPage;
-import com.browserstack.webdriver.testng.listeners.WebDriverListener;
 
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 
 
 public class EchoPageSteps {
