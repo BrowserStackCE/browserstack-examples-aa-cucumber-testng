@@ -12,8 +12,8 @@ This BrowserStack Example repository demonstrates an Appium test framework writt
 
 This repository contains the following Appium tests:
 
-Feature name                          | Description | 
-| ---                                   | --- |
+Feature name                          | Description |
+| ---                                   | --- | 
 | Login with credentials                | This scenario verifies a login scenario with a given set of username and password. |
 | BrowserStack Echo          | This scenario displays the text entered and it asserts true. |
 | BrowserStack Echo Fail            | This scenario displays the text entered and it asserts false. | 
@@ -127,11 +127,15 @@ cloudDriver:
 
 ### Run a tests on BrowserStack
 
-Please make sure that the following keys are set in the ```capabilities.yml``` config file.
+Please make sure that the following keys are set in the ```capabilities.yml``` config file. 
 ```yml
 driverType: cloudDriver
 mobileAppTesting: true
+cloudDriver:
+  app:
+    android_custom_id: <your_android_custom_id>
 ```
+The above is just an example. You can use any of hash/custom/shareable ID for your Android/iOS apps.
 
 
 Maven:
