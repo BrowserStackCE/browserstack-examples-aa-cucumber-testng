@@ -116,13 +116,6 @@
       <scope>test</scope>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>com.browserstack.webdriver</groupId>-->
-<!--      <artifactId>webdriver-framework-testng</artifactId>-->
-<!--      <version>${webdriver-framework.version}</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
-
     <dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
