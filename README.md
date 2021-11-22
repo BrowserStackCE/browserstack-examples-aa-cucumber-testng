@@ -46,7 +46,7 @@ All the above scenarios demonstrate a [Page Object Model](https://www.browsersta
 
 ## Configuration
 
-This repository allows you to to use configuration files similar to the following to run your Appium tests on various platforms including on-premise devices, devices running on an on-prem grid or remote elenium grid.
+This repository allows you to to use configuration files similar to the following to run your Appium tests on various platforms including on-premise devices, devices running on an on-prem grid or remote Selenium/Appium grid.
 
 ```yml
 driverType: cloudDriver
@@ -96,7 +96,7 @@ cloudDriver:
   app:
     android_custom_id: <your_android_custom_id>
 ```
-The above is just an example. You can use any of hash/custom/shareable ID for your Android/iOS apps.
+The above is just an example. You can use any of hash ID or custom ID or shareable ID for your Android/iOS app. If you were to use all three (for the same app), then hash ID will be given precedence. 
 
 
 Maven:
