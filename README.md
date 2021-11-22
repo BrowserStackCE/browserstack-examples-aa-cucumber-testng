@@ -51,46 +51,7 @@ This repository allows you to to use configuration files similar to the followin
 ```yml
 driverType: cloudDriver
 mobileAppTesting: true
-
-onPremDriver:
-  app:
-    ios_path: /path/to/ipa
-    android_path: /path/to/apk
-  platforms:
-    - name:
-      os: Android,
-      os_version: 11.0
-      device: Google Pixel 4
-      capabilities:
-        appPackage: com.browserstack.sampeapp
-        appActivity: com.browserstack.sampeapp.MainActivity
-    - name:
-      os: IOS,
-      os_version: 14,
-      device: iPhone 11
-      capabilities:
-        udid: <udid>
-
-onPremGridDriver:
-  hubUrl: http://localhost:4723/wd/hub
-  app:
-    ios_path: /path/to/ipa
-    android_path: /path/to/apk
-  platforms:
-    - name:
-      os: Android
-      os_version: 11.0
-      device: Google Pixel 4
-      capabilities:
-        appPackage: com.browserstack.sampeapp
-        appActivity: com.browserstack.sampeapp.MainActivity
-    - name:
-      os: IOS,
-      os_version: 14,
-      device: iPhone 11
-      capabilities:
-        udid: <udid> 
-        
+      
 cloudDriver:
   hubUrl: https://hub-cloud.browserstack.com/wd/hub
   app:
