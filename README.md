@@ -42,7 +42,7 @@ All the above scenarios demonstrate a [Page Object Model](https://www.browsersta
   set BROWSERSTACK_USERNAME=<browserstack-username>
   set BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
-
+- Upload your Android/iOS app to BrowserStack using the REST API as mentioned [here](https://www.browserstack.com/docs/app-automate/api-reference/appium/apps#upload-an-app).
 
 ## Configuration
 
