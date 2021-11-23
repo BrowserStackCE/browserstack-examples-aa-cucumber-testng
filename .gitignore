@@ -11,7 +11,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -23,3 +22,14 @@
 hs_err_pid*
 
 *.iml
+
+*.vscode
+*.idea
+*.metadata
+*.classpath
+*.DS_Store
+*.project
+*.settings
+
+# Target folder
+target
